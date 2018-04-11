@@ -1,0 +1,68 @@
+<div id="download-menu-con" class="row">
+<div class="col-lg-9 col-sm-8 nav-block">
+    <div class="well">
+        <h3>NATS</h3>
+        <h4><a href="/download/nats-io/gnatsd">NATS Server</a></h4>
+        <h4>Synadia Supported Clients</h4>
+        <ul class="list-inline">
+        {{ range $.Site.Data }}
+            {{ range .Releases }}
+                {{ if eq .type "nats-client" }}
+                    {{ if .supported }}
+            <li><a href="/download/{{ range first 1 .github}}{{.user}}/{{.repo}}{{end}}" >{{.name}}</a></li>
+                        </li> <span class="separator">/</span>
+                    {{ end }}
+                {{ end }}
+            {{ end }}
+        {{ end }}
+        </ul>
+        <h4>Community Clients</h4>
+        <ul class="list-inline">
+            {{ range $.Site.Data }}
+            {{ range .Releases }}
+            {{ if eq .type "nats-client" }}
+            {{ if not .supported }}
+            <li><a href="/download/{{ range first 1 .github}}{{.user}}/{{.repo}}{{end}}">{{.name}}</a>
+            </li> <span class="separator">/</span>
+            {{ end }}
+            {{ end }}
+            {{ end }}
+            {{ end }}
+        </ul>
+    </div>
+</div>
+
+    <div class="col-lg-3 col-sm-4 nav-block">
+
+        <div class="well">
+            <h3>NATS Streaming</h3>
+            <h4><a href="/download/nats-io/nats-streaming-server">NATS Streaming Server</a></h4>
+            <h4>Synadia Supported Clients</h4>
+            <ul class="list-inline">
+                {{ range $.Site.Data }}
+                {{ range .Releases }}
+                {{ if eq .type "streaming-client" }}
+                {{ if .supported }}
+                <li><a href="/download/{{ range first 1 .github}}{{.user}}/{{.repo}}{{end}}">{{.name}}</a></li>
+                </li> <span class="separator">/</span>
+                {{ end }}
+                {{ end }}
+                {{ end }}
+                {{ end }}
+            </ul>
+            <h4>Community Clients</h4>
+            <ul class="list-inline">
+                {{ range $.Site.Data }}
+                {{ range .Releases }}
+                {{ if eq .type "streaming-client" }}
+                {{ if not .supported }}
+                <li><a href="/download/{{ range first 1 .github}}{{.user}}/{{.repo}}{{end}}">{{.name}}</a>
+                </li> <span class="separator">/</span>
+                {{ end }}
+                {{ end }}
+                {{ end }}
+                {{ end }}
+            </ul>
+        </div>
+    </div>
+</div>

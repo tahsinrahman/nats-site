@@ -195,7 +195,7 @@ Releases:
   release_notes: |
     Last udpated on March 15th, 2015.
   github:
-    - user: isobit
+    - user: joshglendenning
       repo: arduino-nats
       link: https://github.com/isobit/arduino-nats
 
@@ -579,7 +579,7 @@ Releases:
     No release notes.
   github:
     - user: davidsai
-      repo: Arduino-nats-streaming-client
+      repo: arduino-nats-streaming-client
       link: https://github.com/davidsai/Arduino-nats-streaming-client
 
 - name: PHP
