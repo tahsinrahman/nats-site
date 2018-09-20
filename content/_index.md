@@ -3,7 +3,8 @@ date = "2015-09-01T17:05:52-07:00"
 title = "NATS - Open Source Messaging System | Secure, Native Cloud Application Development"
 type = "index"
 cssid = "home"
-description = ""
+description = "NATS is a high performance messaging system that acts as a distributed messaging queue for cloud native applications, IoT device messaging, service mesh and microservices architecture."
+
 +++
 ## NATS is now a hosted **CNCF** Project
 <p class="extra-info">

@@ -24,7 +24,8 @@ programming language you love most but also to learn how other clients do the sa
 
 The team will be adding more programming languages and updating the server configuration pages to 
 provide a similar experience. You can access the new examples in the documentation section of our 
-website [https://www.nats.io/doc/](https://www.nats.io/documentation/). For a sample on look and feel check 
+
+website [https://www.nats.io/documentation/](https://www.nats.io/documentation/). For a sample on look and feel check 
 out [this section](https://www.nats.io/documentation/writing_applications/connecting/).
 
 As always, please let us know what you think and feel free to suggest or contribute examples you would 
