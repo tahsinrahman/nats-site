@@ -28,7 +28,7 @@ nats-server
 **2. Clone the repositories for each client examples**
 
 ```
-go get github.com/nats-io/go-nats
+go get github.com/nats-io/nats.go
 git clone https://github.com/nats-io/node-nats.git
 git clone https://github.com/nats-io/ruby-nats.git
 ```
@@ -36,7 +36,7 @@ git clone https://github.com/nats-io/ruby-nats.git
 **3. Run the Go client subscriber with queue group name.**
 
 ```
-cd $GOPATH/src/github.com/nats-io/go-nats/examples
+cd $GOPATH/src/github.com/nats-io/nats.go/examples
 go run nats-qsub.go foo my-queue
 ```
 
@@ -58,14 +58,14 @@ nats-queue foo my-queue &
 **6. Run another Go client subscriber *without* the queue group.**
 
 ```
-cd $GOPATH/src/github.com/nats-io/go-nats/examples
+cd $GOPATH/src/github.com/nats-io/nats.go/examples
 go run nats-sub.go foo
 ```
 
 **7. Publish a NATS message using the Go client.**
 
 ```
-cd $GOPATH/src/github.com/nats-io/go-nats/examples
+cd $GOPATH/src/github.com/nats-io/nats.go/examples
 go run nats-pub.go foo "Hello NATS!"
 ```
 

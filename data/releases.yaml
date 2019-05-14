@@ -91,8 +91,8 @@ Releases:
     Release v1.7.2 on February 21st, 2019.
   github:
     - user: nats-io
-      repo: go-nats
-      link: https://github.com/nats-io/go-nats
+      repo: nats.go
+      link: https://github.com/nats-io/nats.go
 
 - name: Java
   type: nats-client
@@ -526,8 +526,8 @@ Releases:
     Release v0.4.4 on May 9th, 2019.
   github:
     - user: nats-io
-      repo: go-nats-streaming
-      link: https://github.com/nats-io/go-nats-streaming
+      repo: nats.go-streaming
+      link: https://github.com/nats-io/nats.go-streaming
 
 - name: C#
   type: streaming-client

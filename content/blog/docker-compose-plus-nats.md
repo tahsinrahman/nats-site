@@ -47,7 +47,7 @@ import (
   "os"
   "time"
 
-  "github.com/nats-io/go-nats"
+  "github.com/nats-io/nats.go"
 )
 
 type server struct {
@@ -116,7 +116,7 @@ import (
   "os"
   "time"
 
-  "github.com/nats-io/go-nats"
+  "github.com/nats-io/nats.go"
 )
 
 func healthz(w http.ResponseWriter, r *http.Request) {

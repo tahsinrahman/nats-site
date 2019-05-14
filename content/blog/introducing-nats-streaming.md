@@ -6,7 +6,7 @@ title = "Introducing NATS Streaming"
 author = "Larry McQueary (NATS Product Manager)"
 +++
 
-Wow. It's been a busy summer so far, and it's only half over! As product manager for NATS, this is my first blog post, and fortunately it comes with some great news. In case you missed the announcement at GopherCon 2016 in Denver last week, we just released a major new addition to the NATS family: [NATS Streaming](https://github.com/nats-io/go-nats-streaming).
+Wow. It's been a busy summer so far, and it's only half over! As product manager for NATS, this is my first blog post, and fortunately it comes with some great news. In case you missed the announcement at GopherCon 2016 in Denver last week, we just released a major new addition to the NATS family: [NATS Streaming](https://github.com/nats-io/nats.go-streaming).
 
 ## Why NATS Streaming?
 

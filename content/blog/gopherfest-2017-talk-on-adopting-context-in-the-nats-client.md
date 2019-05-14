@@ -6,7 +6,7 @@ title = "GopherFest 2017 Talk: On Adopting Context in the NATS client"
 author = "Waldemar Quevedo"
 +++
 
-Last Monday, the 2017 edition of the GopherFest was held and we also gave a quick talk on how [we added Context support](https://github.com/nats-io/go-nats/pull/275) to the NATS client, a feature which has been requested since around the time of the Go 1.7 release. As the `context` package now is part of Go, many more library authors are adopting it to support /cancellation propagation/ for blocking calls, making up for more readable code:
+Last Monday, the 2017 edition of the GopherFest was held and we also gave a quick talk on how [we added Context support](https://github.com/nats-io/nats.go/pull/275) to the NATS client, a feature which has been requested since around the time of the Go 1.7 release. As the `context` package now is part of Go, many more library authors are adopting it to support /cancellation propagation/ for blocking calls, making up for more readable code:
 
 <img class="img-responsive center-block" alt="Tip: If it is a blocking call in a library, it will probably benefit from adding context.Context support soon." src="/img/blog/gopherfest-2017-talk-on-adopting-context-in-the-nats-client.png">
 
@@ -21,7 +21,7 @@ import (
 	"log"
 	"time"
 
-	"github.com/nats-io/go-nats"
+	"github.com/nats-io/nats.go"
 )
 
 func main() {

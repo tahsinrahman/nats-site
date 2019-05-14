@@ -16,7 +16,7 @@ NATS supports [request reply messaging](/documentation/writing_applications/conc
 
 - [Set up your Go environment](/documentation/additional_documentation/go-install/)
 - [Installed the NATS server](/documentation/managing_the_server/installing/)
-- [Cloned go-nats project to `$GOPATH/src/github.com/nats-io`](https://github.com/nats-io/go-nats)
+- [Cloned nats.go project to `$GOPATH/src/github.com/nats-io`](https://github.com/nats-io/nats.go)
 
 #### 1. Start the NATS server
 
@@ -31,7 +31,7 @@ You will use these sessions to run the NATS request and reply clients.
 #### 3. Change to the examples directory
 
 ```sh
-% cd $GOPATH/src/github.com/nats-io/go-nats/examples
+% cd $GOPATH/src/github.com/nats-io/nats.go/examples
 ```
 
 #### 4. In one terminal, run the reply client listener

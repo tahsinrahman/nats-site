@@ -52,7 +52,7 @@ $ nats-streaming-server \
 
 By default, NATS Streaming uses an in-memory store. The `--store` option is used to change this to a file-based which can survive restarts. The `--max_msgs` and `--max_bytes` are set to zero to make all messages retained for all channels. Otherwise the server will default to 1 million messages or ~100 MB in size, in which case the channel will be pruned of messages to go below whichever limit was reached (thus deleting history).
 
-Once that is running in a shell, we can starting writing some code. For the code examples, I will be using the [Go client](https://github.com/nats-io/go-nats-streaming). There are several official clients and a few community-built ones on the [downloads page](http://nats.io/download/).
+Once that is running in a shell, we can starting writing some code. For the code examples, I will be using the [Go client](https://github.com/nats-io/nats.go-streaming). There are several official clients and a few community-built ones on the [downloads page](http://nats.io/download/).
 
 ## Boilerplate code
 First we need to establish a connection.
@@ -62,7 +62,7 @@ package main
 
 import (
     "log"
-    stan "github.com/nats-io/go-nats-streaming"
+    stan "github.com/nats-io/nats.go-streaming"
 )
 
 // Convenience function to log the error on a deferred close.
@@ -288,7 +288,7 @@ All the options mentioned above still apply, including durability. Just add a Du
 
 ### Always use `SetManualAckMode()`
 
-This provides control over acking even though it adds a couple extra lines to the handle function. If nothing else, an ACK failure can be logged which is [not currently being done with implicit ACKs](https://github.com/nats-io/go-nats-streaming/blob/master/stan.go#L467-L473).
+This provides control over acking even though it adds a couple extra lines to the handle function. If nothing else, an ACK failure can be logged which is [not currently being done with implicit ACKs](https://github.com/nats-io/nats.go-streaming/blob/master/stan.go#L467-L473).
 
 ### Start with the messages
 

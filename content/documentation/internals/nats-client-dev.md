@@ -27,7 +27,7 @@ This guide provides you with considerations for developing NATS clients, includi
 
 Probably the best way to learn about implementing a client is to look at one of the client's maintained by the Synadia team. These clients are generally full featured, so if you can use them, that is even better, but if you have to write a client these may go beyond your needs while still capturing many of the design considerations discussed here.
 
-- [go](https://github.com/nats-io/go-nats)
+- [go](https://github.com/nats-io/nats.go)
 - [node](https://github.com/nats-io/node-nats)
 - [typescript](https://github.com/nats-io/ts-nats)
 - [python2](https://github.com/nats-io/python-nats)

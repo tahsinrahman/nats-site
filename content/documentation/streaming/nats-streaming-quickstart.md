@@ -10,7 +10,7 @@ category = "tutorials"
   parent = "Event Streaming"
 +++
 
-This tutorial demonstrates NATS Streaming using example [Go NATS Streaming clients](https://github.com/nats-io/go-nats-streaming.git).
+This tutorial demonstrates NATS Streaming using example [Go NATS Streaming clients](https://github.com/nats-io/nats.go-streaming.git).
 
 ## Prerequisites
 
@@ -24,7 +24,7 @@ Download and install the [NATS Streaming Server](https://github.com/nats-io/nats
 Clone the following repositories:
 
 - NATS Streaming Server: `git clone https://github.com/nats-io/nats-streaming-server.git`
-- NATS Streaming Client: `git clone https://github.com/nats-io/go-nats-streaming.git`
+- NATS Streaming Client: `git clone https://github.com/nats-io/nats.go-streaming.git`
 
 ## Start the NATS Streaming Server
 
@@ -56,7 +56,7 @@ You should see the following, indicating that the NATS Streaming Server is runni
 Publish several messages. For each publication you should get a result.
 
 ```sh
-% cd $GOPATH/src/github.com/nats-io/go-nats-streaming/examples/stan-pub
+% cd $GOPATH/src/github.com/nats-io/nats.go-streaming/examples/stan-pub
 % go run main.go foo "msg one"
 Published [foo] : 'msg one'
 % go run main.go foo "msg two"
@@ -70,7 +70,7 @@ Published [foo] : 'msg three'
 Use the `--all` flag to receive all published messages.
 
 ```sh
-% cd $GOPATH/src/github.com/nats-io/go-nats-streaming/examples/stan-sub
+% cd $GOPATH/src/github.com/nats-io/nats.go-streaming/examples/stan-sub
 % go run main.go --all -c test-cluster -id myID foo
 Connected to nats://localhost:4222 clusterID: [test-cluster] clientID: [myID]
 subscribing with DeliverAllAvailable
